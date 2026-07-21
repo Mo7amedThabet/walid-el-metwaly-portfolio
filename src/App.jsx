@@ -17,10 +17,10 @@ const CONTACT = {
 };
 
 const EXPERTISE_IMAGES = [
-  "/power-distribution.jpg",
-  "/electrical-design.jpg",
-  "/site-engineering.jpg",
-  "/low-current-systems.jpg"
+  "/power-distribution.webp",
+  "/electrical-design.webp",
+  "/site-engineering.webp",
+  "/low-current-systems.webp"
 ];
 
 function SectionHeading({ label, title, intro }) {
@@ -225,7 +225,7 @@ function App() {
           </div>
 
           <div className="shared-portrait" ref={portrait}>
-            <img src="/walid-portrait.jpeg" alt="Walid Mohamed El-Metwaly" />
+            <img src="/walid-portrait.webp" alt="Walid Mohamed El-Metwaly" fetchPriority="high" />
             <div className="portrait-shade" />
             <span className="portrait-index">01</span>
           </div>
@@ -259,7 +259,7 @@ function App() {
             {t.expertise.items.map((item, index) => (
               <article className="expertise-card" key={item.n}>
                 <div className="expertise-image">
-                  <img src={EXPERTISE_IMAGES[index]} alt={item.title} loading="lazy" />
+                  <img src={EXPERTISE_IMAGES[index]} alt={item.title} loading="eager" decoding="async" />
                   <span className="card-number">{item.n}</span>
                   <ArrowUpRight className="card-arrow" size={21} />
                 </div>
