@@ -81,6 +81,9 @@ function App() {
   const portrait = useRef(null);
   const t = content[lang];
   const isAr = lang === "ar";
+  const cvPath = isAr
+    ? "/Walid-Mohamed-El-Metwaly-CV-AR.pdf"
+    : "/Walid-Mohamed-El-Metwaly-CV.pdf";
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -337,8 +340,8 @@ function App() {
             <a href={`tel:${CONTACT.phone}`}><Phone size={20} /><span>{t.contact.phone}<small>{CONTACT.phone}</small></span><ArrowUpRight /></a>
             <a href={`https://wa.me/${CONTACT.phone.replace(/\D/g, "")}`} target="_blank" rel="noreferrer"><MessageCircle size={20} /><span>{t.contact.whatsapp}<small>{CONTACT.phone}</small></span><ArrowUpRight /></a>
             <a href={CONTACT.linkedin} target="_blank" rel="noreferrer"><Link2 size={20} /><span>{t.contact.linkedin}<small>Connect professionally</small></span><ArrowUpRight /></a>
-            <a href="/Walid-Mohamed-El-Metwaly-CV.pdf" target="_blank" rel="noreferrer"><Eye size={20} /><span>{t.contact.cvView}<small>PDF · 2 pages</small></span><ArrowUpRight /></a>
-            <a href="/Walid-Mohamed-El-Metwaly-CV.pdf" download><Download size={20} /><span>{t.contact.cv}<small>PDF · 2 pages</small></span><ArrowDownRight /></a>
+            <a href={cvPath} target="_blank" rel="noreferrer"><Eye size={20} /><span>{t.contact.cvView}<small>{t.contact.cvMeta}</small></span><ArrowUpRight /></a>
+            <a href={cvPath} download><Download size={20} /><span>{t.contact.cv}<small>{t.contact.cvMeta}</small></span><ArrowDownRight /></a>
           </div>
           <div className="contact-location reveal"><MapPin size={18} />{t.contact.location}</div>
         </section>

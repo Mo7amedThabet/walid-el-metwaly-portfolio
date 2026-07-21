@@ -78,6 +78,7 @@ export const content = {
       linkedin: "LinkedIn",
       cvView: "View CV",
       cv: "Download CV",
+      cvMeta: "PDF · 2 pages",
       location: "Riyadh, Saudi Arabia"
     },
     footer: "“There’s a way to do it better — find it.”",
@@ -166,6 +167,7 @@ export const content = {
       linkedin: "لينكدإن",
       cvView: "عرض السيرة الذاتية",
       cv: "تحميل السيرة الذاتية",
+      cvMeta: "PDF · صفحتان",
       location: "الرياض، المملكة العربية السعودية"
     },
     footer: "«هناك دائمًا طريقة أفضل لإنجاز الأمر — ابحث عنها.»",

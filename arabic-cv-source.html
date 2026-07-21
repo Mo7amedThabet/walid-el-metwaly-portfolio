@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيرة الذاتية | وليد محمد المتولي</title>
+  <style>
+    :root { --ink:#102019; --green:#426b16; --lime:#a8dc38; --muted:#607069; --paper:#f7f9f4; --line:#d6dfd2; }
+    * { box-sizing: border-box; }
+    @page { size: A4; margin: 0; }
+    body { margin: 0; background: #dce2db; color: var(--ink); font-family: "Segoe UI", Tahoma, Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { position: relative; width: 210mm; height: 297mm; margin: 0 auto 12px; padding: 17mm 18mm 14mm; overflow: hidden; background: var(--paper); page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+    .page::before { content:""; position:absolute; top:0; right:0; width:8mm; height:100%; background:var(--ink); }
+    .page::after { content:""; position:absolute; top:0; right:0; width:8mm; height:42mm; background:var(--lime); }
+    .header { display:grid; grid-template-columns: 1fr 31mm; gap:10mm; align-items:center; padding-bottom:9mm; border-bottom:1px solid var(--line); }
+    .portrait { width:31mm; height:36mm; object-fit:cover; object-position:center 22%; border-radius:4px 18px 4px 18px; border:1.5px solid var(--lime); }
+    .kicker, .section-title { color:var(--green); font-size:8.3pt; font-weight:800; letter-spacing:.04em; }
+    h1 { margin:2mm 0 1.5mm; font-size:26pt; line-height:1.2; letter-spacing:-.04em; }
+    .headline { margin:0; color:var(--muted); font-size:11pt; font-weight:600; }
+    .contact { margin-top:5mm; display:flex; flex-wrap:wrap; gap:2.2mm 7mm; direction:rtl; color:var(--muted); font-size:8.3pt; }
+    .contact span { direction:ltr; unicode-bidi:embed; }
+    .contact b { color:var(--ink); font-weight:700; margin-left:1.2mm; }
+    .grid { display:grid; grid-template-columns: 1.15fr .85fr; gap:11mm; margin-top:9mm; }
+    .section { margin-bottom:7mm; break-inside:avoid; }
+    .section-title { display:flex; align-items:center; gap:3mm; margin:0 0 3.5mm; }
+    .section-title::before { content:""; width:7mm; height:1.5mm; border-radius:10px; background:var(--lime); }
+    .summary { margin:0; color:#415149; font-size:9.5pt; line-height:1.85; }
+    .role { position:relative; padding:0 5mm 5.5mm 0; border-right:1px solid var(--line); }
+    .role::before { content:""; position:absolute; right:-2mm; top:1.5mm; width:3.6mm; height:3.6mm; border-radius:50%; background:var(--lime); border:1mm solid var(--paper); }
+    .role:last-child { padding-bottom:0; }
+    .role h3 { margin:0; font-size:11pt; }
+    .company { margin:1mm 0 2mm; color:var(--green); font-size:8.7pt; font-weight:700; }
+    ul { margin:0; padding:0 4.5mm 0 0; }
+    li { margin:0 0 1.6mm; color:#4e5e56; font-size:8.5pt; line-height:1.55; }
+    .education-card { padding:5mm; color:white; background:var(--ink); border-radius:4px 16px 4px 16px; }
+    .education-card small { color:var(--lime); font-size:8pt; }
+    .education-card h3 { margin:2mm 0; font-size:12pt; }
+    .education-card p { margin:1mm 0; color:#cdd8d2; font-size:8.5pt; line-height:1.55; }
+    .skills { display:flex; flex-wrap:wrap; gap:2mm; }
+    .skills span { padding:2mm 3mm; color:#32433a; background:#e8eee5; border:1px solid var(--line); border-radius:20px; font-size:7.7pt; font-weight:600; }
+    .level { margin-bottom:3mm; }
+    .level div { display:flex; justify-content:space-between; margin-bottom:1.2mm; font-size:8.5pt; font-weight:700; }
+    .level i { display:block; height:1.5mm; background:#dce4d8; border-radius:10px; overflow:hidden; }
+    .level i::after { content:""; display:block; width:var(--w); height:100%; background:var(--green); border-radius:inherit; }
+    .project { padding:7mm; background:linear-gradient(135deg,#102019,#1d3529); color:white; border-radius:5px 22px 5px 22px; }
+    .project .section-title { color:var(--lime); }
+    .project h2 { margin:2mm 0 3mm; font-size:18pt; line-height:1.3; }
+    .project p { margin:0; color:#d1dcd5; font-size:9pt; line-height:1.8; }
+    .project-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2.5mm; margin-top:5mm; }
+    .project-grid span { padding:3mm; text-align:center; color:var(--ink); background:var(--lime); border-radius:4px; font-size:7.6pt; font-weight:800; }
+    .training-list { display:grid; grid-template-columns:1fr 1fr; gap:3mm; }
+    .training-item { padding:4mm; border:1px solid var(--line); border-radius:4px 12px 4px 12px; break-inside:avoid; }
+    .training-item b { display:block; font-size:9pt; line-height:1.5; }
+    .training-item small { display:block; margin-top:1.5mm; color:var(--green); font-size:7.8pt; font-weight:700; }
+    .footer { position:absolute; right:18mm; left:18mm; bottom:8mm; display:flex; justify-content:space-between; color:#75837b; font-size:7pt; border-top:1px solid var(--line); padding-top:3mm; }
+    .footer span:last-child { direction:ltr; }
+    @media print { body { background:white; } .page { margin:0; } }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <header class="header">
+      <div>
+        <div class="kicker">مهندس كهرباء</div>
+        <h1>وليد محمد المتولي</h1>
+        <p class="headline">التصميم الكهربائي · توزيع القوى · هندسة المواقع والمكتب الفني</p>
+        <div class="contact">
+          <div><b>الموقع</b>الرياض، المملكة العربية السعودية</div>
+          <div><b>الهاتف</b><span>+966 57 506 0395</span></div>
+          <div><b>البريد</b><span>walid.mohamed.aboelezz@gmail.com</span></div>
+          <div><b>LinkedIn</b><span>linkedin.com/in/walid-abo-el-ezz-59195a24a</span></div>
+        </div>
+      </div>
+      <img class="portrait" src="public/walid-portrait.webp" alt="وليد محمد المتولي">
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="section">
+          <h2 class="section-title">الملخص المهني</h2>
+          <p class="summary">مهندس كهرباء يمتلك خبرة عملية في التصميم الكهربائي وتوزيع القوى وهندسة المواقع وأعمال المكتب الفني، مع معرفة متعمقة بأنظمة الجهد المنخفض والمتوسط وحسابات الأحمال وتصميم الإضاءة. أجمع بين دقة الحسابات الهندسية وكفاءة التنفيذ بالموقع مع التركيز على السلامة والجودة والتنسيق بين التخصصات.</p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">الخبرة العملية</h2>
+          <article class="role">
+            <h3>مهندس موقع ومكتب فني</h3>
+            <p class="company">Assma AL-Tourid</p>
+            <ul>
+              <li>إعداد واعتماد الخامات المطلوبة للأعمال الكهربائية.</li>
+              <li>تصميم اللوحات الكهربائية ومتابعة إجراءات اعتمادها.</li>
+              <li>الإشراف على التركيبات وضمان مطابقتها للرسومات والمواصفات الفنية.</li>
+              <li>التنسيق بين فرق العمل ومتابعة الجودة والسلامة والبرنامج التنفيذي.</li>
+            </ul>
+          </article>
+          <article class="role">
+            <h3>مهندس موقع</h3>
+            <p class="company">Dar El-Memar (DME)</p>
+            <ul>
+              <li>الإشراف المباشر على أعمال التركيبات الكهربائية بالموقع.</li>
+              <li>التأكد من تنفيذ الأعمال وفق الرسومات والمواصفات المعتمدة.</li>
+              <li>التنسيق مع الفرق متعددة التخصصات ومتابعة تقدم الأعمال.</li>
+              <li>تطبيق متطلبات الجودة والسلامة أثناء مراحل التنفيذ.</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <aside>
+        <section class="section">
+          <h2 class="section-title">التعليم</h2>
+          <div class="education-card">
+            <small>سبتمبر 2019 — يوليو 2024</small>
+            <h3>بكالوريوس الهندسة الكهربائية</h3>
+            <p>جامعة الأهرام الكندية · القاهرة، مصر</p>
+            <p><b>التقدير:</b> جيد جدًا</p>
+            <p><b>مشروع التخرج:</b> امتياز</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">المهارات التقنية</h2>
+          <div class="skills">
+            <span>حساب الأحمال</span><span>اختيار الكابلات</span><span>تحليل القصر</span>
+            <span>توزيع LV/MV</span><span>تصميم اللوحات</span><span>تصميم الإضاءة</span>
+            <span>PLC</span><span>Motor Drives</span><span>أنظمة التيار الخفيف</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">البرامج الهندسية</h2>
+          <div class="skills">
+            <span>AutoCAD</span><span>Revit</span><span>DIALux evo</span><span>DIALux</span><span>Microsoft Office</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">اللغات</h2>
+          <div class="level"><div><span>العربية</span><span>اللغة الأم</span></div><i style="--w:100%"></i></div>
+          <div class="level"><div><span>الإنجليزية</span><span>جيد جدًا</span></div><i style="--w:82%"></i></div>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer"><span>السيرة الذاتية · وليد محمد المتولي</span><span>01 / 02</span></footer>
+  </section>
+
+  <section class="page">
+    <div class="project">
+      <h2 class="section-title">مشروع التخرج الرئيسي</h2>
+      <h2>التصميم الكهربائي لمجمع<br>Medical Park Premier</h2>
+      <p>مشروع تصميم كهربائي متكامل لمنشأة طبية، يغطي دورة التصميم من تقدير الأحمال وتخطيط المساحات وصولًا إلى أنظمة التوزيع والحماية والتيار الخفيف، وحصل على تقدير امتياز.</p>
+      <div class="project-grid">
+        <span>تقدير الأحمال</span><span>جداول اللوحات</span><span>لوحات LV / MV</span>
+        <span>اختيار الكابلات</span><span>هبوط الجهد والقصر</span><span>أنظمة ELV</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <section class="section">
+          <h2 class="section-title">التدريبات والشهادات</h2>
+          <div class="training-list">
+            <div class="training-item"><b>دبلومة احترافية في التوزيع الكهربائي</b><small>EDUVAT · 2023</small></div>
+            <div class="training-item"><b>برمجة PLC والتحكم في المحركات</b><small>HA Consultant Group · 2023</small></div>
+            <div class="training-item"><b>تدريب التوزيع الكهربائي</b><small>Hassan Allam Technologies · 2021</small></div>
+            <div class="training-item"><b>تدريب التوزيع الكهربائي</b><small>شركة البحيرة لتوزيع الكهرباء · 2022</small></div>
+            <div class="training-item"><b>برنامج تدريبي في قطاع البترول</b><small>شركة الوسطاني للبترول · 2023</small></div>
+            <div class="training-item"><b>برنامج تدريبي هندسي</b><small>Dar El-Memar (DME)</small></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">مجالات التخصص</h2>
+          <ul>
+            <li>تصميم أنظمة توزيع القوى للجهد المنخفض والمتوسط.</li>
+            <li>إعداد جداول الأحمال واللوحات واختيار معدات الحماية.</li>
+            <li>حساب مقاطع الكابلات وهبوط الجهد وتيارات القصر.</li>
+            <li>تصميم الإضاءة باستخدام DIALux وDIALux evo.</li>
+            <li>تخطيط أنظمة CCTV والتحكم في الدخول والأنظمة الصوتية.</li>
+            <li>الإشراف الموقعي والتنسيق الفني ومراجعة جودة التنفيذ.</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <section class="section">
+          <h2 class="section-title">المهارات الشخصية</h2>
+          <div class="skills">
+            <span>العمل الجماعي</span><span>إدارة الوقت</span><span>التنظيم</span>
+            <span>منهجية 5S</span><span>التواصل الفعال</span><span>التعلم المستمر</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">معلومات إضافية</h2>
+          <ul>
+            <li>مقيم في الرياض، المملكة العربية السعودية.</li>
+            <li>إقامة سارية.</li>
+            <li>رخصة قيادة سارية.</li>
+            <li>متاح للفرص المهنية والمشاريع الهندسية المناسبة.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">القيمة التي أقدمها</h2>
+          <p class="summary">تحويل المتطلبات الفنية إلى حلول كهربائية قابلة للتنفيذ، مع موازنة الأداء والسلامة والجودة والتكلفة، والحفاظ على تنسيق واضح بين التصميم والموقع.</p>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer"><span>walid.mohamed.aboelezz@gmail.com · +966 57 506 0395</span><span>02 / 02</span></footer>
+  </section>
+</body>
+</html>
