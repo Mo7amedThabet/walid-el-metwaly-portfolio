@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+
+# Original source assets (optimized public copies are tracked)
+/Walid_Mohamed_El-Metwaly_FlowCV_Resume_2026-07-05.pdf
+/WhatsApp Image 2026-07-21 at 8.56.17 PM.jpeg
